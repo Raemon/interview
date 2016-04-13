@@ -1,0 +1,79 @@
+* {
+    padding:0;
+    margin:0;
+    font-family:"Verdana";
+    font-weight:300;
+    box-sizing: border-box;
+}
+
+button {
+    cursor:pointer;
+}
+
+.content {
+    width:100%;
+    min-height:100vh;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #ffffff 0%, #32586d 83%, #32576d 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #ffffff 0%,#32586d 83%,#32576d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #ffffff 0%,#32586d 83%,#32576d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#32576d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.header {
+    padding:1.2em 2em;
+    width:100%;
+    clear:both;
+    overflow:hidden;
+    background-color: rgba(0,0,0,.2);
+}
+
+#images {
+    width:75%;
+    padding:2em;
+    display:flex;
+    justify-content: space-between;
+    flex-flow:row wrap;
+    align-items:flex-start;
+}
+
+.button_01 {
+    outline:none;
+    float:right;
+    border:none;
+    background-color: rgba(0,0,0,.5);
+    color:#ddd;
+    font-size:1em;
+    padding:1em 3em;
+}
+.button_01:hover {
+    background-color: rgba(0,0,0,.6);
+}
+.button_01:active {
+    background-color: rgba(0,0,0,.3);
+}
+
+.image-container {
+    min-height:2em;
+    background-color: transparent;
+    width:calc(25% - 1em);
+    margin-bottom:1em;
+    position:relative;
+    cursor:pointer;
+}
+.image-container:hover {
+    border:3px solid black;
+}
+.image-filename {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    color:#aaa;
+    font-size:.6em;
+    padding:.5rem .5rem 1rem .5rem;
+    background-color: rgba(0,0,0,.75);
+}
+
+.image-thumbnail {
+    width:100%;
+}
